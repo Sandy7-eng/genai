@@ -1,0 +1,1323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LeftClick | Scale B2B Pipeline with High-Precision Outbound & Super Low CAC</title>
+  <meta name="description" content="LeftClick helps high-growth B2B companies scale revenue using outbound methods like cold email, combining massive scale with AI-based personalization and ultra-low CAC. Trusted by multi-billion dollar portfolio companies.">
+  <meta name="keywords" content="B2B outbound, cold email, low CAC, AI personalization, lead generation, sales pipeline">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme">
+
+  <!-- Background Ambient Glow Orbs -->
+  <div class="ambient-glow orb-1"></div>
+  <div class="ambient-glow orb-2"></div>
+  <div class="ambient-glow orb-3"></div>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-banner">
+    <div class="container banner-inner">
+      <span class="badge-pulse">CASE STUDY</span>
+      <p class="banner-text">How we added <strong>$4.2M in qualified pipeline</strong> for a Sequoia-backed SaaS at $148 CAC</p>
+      <a href="#case-studies" class="banner-link">Read Blueprint &rarr;</a>
+    </div>
+  </div>
+
+  <!-- Main Navigation -->
+  <header class="site-header" id="navbar">
+    <div class="container nav-wrapper">
+      <a href="#" class="brand-logo" id="brand-logo">
+        <div class="logo-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+          <span class="logo-dot"></span>
+        </div>
+        <span class="logo-text">left<span>click</span></span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#engine" class="nav-link">AI Engine</a>
+        <a href="#pick-best-fit" class="nav-link">Pick Best Fit &trade;</a>
+        <a href="#cac-calculator" class="nav-link">CAC Calculator</a>
+        <a href="#case-studies" class="nav-link">Proof & Results</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <div class="mobile-auth-wrapper">
+          <button class="btn-secondary btn-block nav-auth-btn" id="mobile-login-btn">Log In</button>
+          <button class="btn-primary btn-block nav-auth-btn" id="mobile-signup-btn">Create Account</button>
+        </div>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#interactive-demo" class="btn-ghost hide-mobile">View Sample</a>
+        <button class="btn-secondary nav-auth-btn" id="open-login-btn">Log In</button>
+        <button class="btn-primary nav-auth-btn" id="open-signup-btn">
+          <span>Sign Up</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+        <button class="btn-primary hide-tablet" id="open-booking-btn">
+          <span>Book Call</span>
+        </button>
+
+        <!-- User Logged-In Profile Badge (Shown when authenticated) -->
+        <div class="user-profile-menu" id="user-profile-menu" style="display: none;">
+          <button class="user-avatar-btn" id="user-avatar-btn" aria-haspopup="true" aria-expanded="false">
+            <div class="user-avatar" id="user-avatar-initials">AM</div>
+            <span class="user-name" id="user-nav-name">Alex M.</span>
+            <svg class="chevron-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="user-dropdown" id="user-dropdown">
+            <div class="dropdown-header">
+              <p class="dropdown-user-name" id="dropdown-user-name">Alex Morgan</p>
+              <p class="dropdown-user-email" id="dropdown-user-email">alex@company.com</p>
+              <span class="dropdown-badge">Enterprise Pro</span>
+            </div>
+            <div class="dropdown-divider"></div>
+            <a href="#dashboard" class="dropdown-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+              <span>Dashboard</span>
+            </a>
+            <a href="#settings" class="dropdown-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+              <span>Account Settings</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <button class="dropdown-item danger" id="logout-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+              <span>Log Out</span>
+            </button>
+          </div>
+        </div>
+
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-icon">⚡</span>
+            <span class="badge-text">Engineered for High-Growth B2B Leaders</span>
+            <span class="badge-sub">Trusted by Multi-Billion $ Portfolios</span>
+          </div>
+
+          <h1 class="hero-title">
+            Scale revenue with outbound at <span class="gradient-text">super-low CAC</span> and AI precision.
+          </h1>
+
+          <p class="hero-subtitle">
+            We help high-growth B2B companies build predictable sales pipeline using outbound methods like cold email. Deploying AI-based personalization that attacks at <strong>massive scale</strong> while maintaining <strong>1-on-1 human touch</strong>.
+          </p>
+
+          <div class="hero-cta-group">
+            <button class="btn-primary btn-large open-modal-trigger">
+              <span>Start Scaling Pipeline</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+            <a href="#cac-calculator" class="btn-secondary btn-large">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="4" y="2" width="16" height="20" rx="2"></rect>
+                <line x1="8" y1="6" x2="16" y2="6"></line>
+                <line x1="16" y1="14" x2="16" y2="18"></line>
+                <path d="M16 10h.01"></path>
+                <path d="M12 10h.01"></path>
+                <path d="M8 10h.01"></path>
+                <path d="M12 14h.01"></path>
+                <path d="M8 14h.01"></path>
+                <path d="M12 18h.01"></path>
+                <path d="M8 18h.01"></path>
+              </svg>
+              <span>Calculate Your CAC Savings</span>
+            </a>
+          </div>
+
+          <!-- Proof Metrics Bar -->
+          <div class="hero-metrics-grid">
+            <div class="metric-card">
+              <div class="metric-value" data-target="74" data-suffix="%">0%</div>
+              <div class="metric-label">Average CAC Reduction</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-value" data-target="99.4" data-suffix="%">0%</div>
+              <div class="metric-label">Inbox Primary Placement</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-value" data-target="3.8" data-prefix="" data-suffix="x">0x</div>
+              <div class="metric-label">Higher Qualified Reply Rate</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-value" data-target="85" data-prefix="$" data-suffix="M+">$0M+</div>
+              <div class="metric-label">Pipeline Generated</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual: Live Interactive Outbound AI Preview -->
+        <div class="hero-preview-wrapper" id="interactive-demo">
+          <div class="preview-glow"></div>
+          <div class="terminal-card">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="terminal-title">
+                <span class="status-indicator"></span> leftclick_ai_engine // active_stream
+              </div>
+              <div class="terminal-badge">Real-Time Generation</div>
+            </div>
+
+            <!-- Terminal Tabs -->
+            <div class="terminal-subnav">
+              <button class="term-tab active" data-tab="email">Live AI Email Synthesis</button>
+              <button class="term-tab" data-tab="signals">Live Buying Signals</button>
+              <button class="term-tab" data-tab="deliverability">Deliverability Health</button>
+            </div>
+
+            <!-- Tab 1: AI Email -->
+            <div class="term-content active" id="tab-email">
+              <div class="email-mockup">
+                <div class="email-header-meta">
+                  <div class="meta-row">
+                    <span class="meta-label">TO:</span>
+                    <span class="meta-val highlight-val">alex.vance@finscale.io (VP Revenue, Series C)</span>
+                  </div>
+                  <div class="meta-row">
+                    <span class="meta-label">SUBJECT:</span>
+                    <span class="meta-val">Quick question on Finscale's outbound SDR ramp</span>
+                  </div>
+                  <div class="meta-tags">
+                    <span class="tag-pill tag-green">&#10003; 98.4% Perceived Personalization</span>
+                    <span class="tag-pill tag-blue">&#9881; Verified Signal: Raised $45M & Hiring 6 SDRs</span>
+                    <span class="tag-pill tag-purple">CAC Target: &lt;$180/meeting</span>
+                  </div>
+                </div>
+
+                <div class="email-body-text">
+                  <p>Alex,</p>
+                  <p>Noticed Finscale just posted 6 open SDR roles in Austin after your Series C announcement last Tuesday &mdash; congrats on the milestone.</p>
+                  <p>Most revenue leaders expanding their outbound team hit a wall with traditional $6k/mo SDR agency retainers and ad CAC soaring over $800+ per lead.</p>
+                  <p>At <strong>LeftClick</strong>, we built an AI outbound engine that writes hyper-individualized research angles for each prospect at scale &mdash; generating <span class="highlight-code">32 qualified enterprise demos/mo</span> for our B2B partners at an average CAC of under $150.</p>
+                  <p>Worth a quick 7-minute sync on Thursday at 2:15 PM CST to see the live prospect tear-down we ran on your ICP?</p>
+                </div>
+
+                <div class="email-footer-stats">
+                  <div class="stat-pill">
+                    <span class="label">Spam Score:</span>
+                    <span class="val text-success">0.02 (Flawless)</span>
+                  </div>
+                  <div class="stat-pill">
+                    <span class="label">Personalization Depth:</span>
+                    <span class="val text-brand">100% 1-to-1</span>
+                  </div>
+                  <div class="stat-pill">
+                    <span class="label">Estimated CAC:</span>
+                    <span class="val text-accent">$112 / Meeting</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab 2: Signals -->
+            <div class="term-content" id="tab-signals">
+              <div class="signals-list">
+                <div class="signal-item">
+                  <div class="signal-icon">&#128640;</div>
+                  <div class="signal-info">
+                    <div class="signal-title">Funding Trigger Ingested</div>
+                    <div class="signal-desc">Finscale closed Series C ($45M, Index Ventures). Intent: High budget allocation for sales expansion.</div>
+                  </div>
+                  <span class="signal-time">12m ago</span>
+                </div>
+                <div class="signal-item">
+                  <div class="signal-icon">&#128101;</div>
+                  <div class="signal-info">
+                    <div class="signal-title">Executive Hiring Velocity</div>
+                    <div class="signal-desc">New VP Sales hired from Stripe + 6 SDR headcount openings listed on Greenhouse.</div>
+                  </div>
+                  <span class="signal-time">41m ago</span>
+                </div>
+                <div class="signal-item">
+                  <div class="signal-icon">&#128295;</div>
+                  <div class="signal-info">
+                    <div class="signal-title">Tech Stack Verification</div>
+                    <div class="signal-desc">Salesforce + Apollo detected. Missing automated AI deliverability cluster.</div>
+                  </div>
+                  <span class="signal-time">1h ago</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab 3: Deliverability -->
+            <div class="term-content" id="tab-deliverability">
+              <div class="deliverability-grid">
+                <div class="deliv-box">
+                  <span class="deliv-num text-success">99.8%</span>
+                  <span class="deliv-desc">SPF / DKIM / DMARC Pass</span>
+                </div>
+                <div class="deliv-box">
+                  <span class="deliv-num text-brand">48</span>
+                  <span class="deliv-desc">Dedicated Secondary Domains</span>
+                </div>
+                <div class="deliv-box">
+                  <span class="deliv-num text-accent">0.03%</span>
+                  <span class="deliv-desc">Bounce Rate (Zero Burn)</span>
+                </div>
+                <div class="deliv-box">
+                  <span class="deliv-num text-success">100%</span>
+                  <span class="deliv-desc">Primary Inboxing Score</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Social Proof Logos Section -->
+    <section class="logos-section">
+      <div class="container">
+        <p class="logos-header">
+          TRUSTED VENDOR FOR PORTFOLIO COMPANIES BACKED BY TOP MULTI-BILLION DOLLAR FUNDS
+        </p>
+        <div class="logos-track">
+          <div class="logo-badge">SEQUOIA &bull; PORTFOLIO</div>
+          <div class="logo-badge">ANDREESSEN HOROWITZ &bull; CO</div>
+          <div class="logo-badge">ACCEL &bull; FOUNDERS</div>
+          <div class="logo-badge">Y COMBINATOR &bull; ALUMNI</div>
+          <div class="logo-badge">BESSEMER &bull; VENTURES</div>
+          <div class="logo-badge">INSIGHT PARTNERS &bull; TECH</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Value Propositions: Addressing the 4 Pillars -->
+    <section class="pillars-section" id="engine">
+      <div class="container">
+        <div class="section-badge-center">
+          <span class="badge-sub">ENGINEERED DIFFERENTLY</span>
+        </div>
+        <h2 class="section-title text-center">
+          The LeftClick Advantage: Scale &times; High Personalization &times; Super-Low CAC
+        </h2>
+        <p class="section-desc text-center">
+          Traditional outbound agencies blast generic templates that burn your domain and deliver sub-1% reply rates. LeftClick combines algorithmic targeting with generative AI to make every cold email feel handcrafted.
+        </p>
+
+        <div class="pillars-grid">
+          
+          <!-- Pillar 1: Super Low CAC -->
+          <div class="pillar-card glow-card">
+            <div class="card-glow"></div>
+            <div class="pillar-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                <polyline points="17 6 23 6 23 12"></polyline>
+              </svg>
+            </div>
+            <div class="pillar-tag">Pillar 01</div>
+            <h3 class="pillar-heading">Super-Low CAC Unit Economics</h3>
+            <p class="pillar-text">
+              Paid LinkedIn & Google ads for B2B now cost $400-$1,200+ per qualified demo. Our outbound infrastructure drives verified enterprise meetings at <strong>$95 - $190 CAC</strong>, giving high-growth companies unmatched capital efficiency.
+            </p>
+            <ul class="pillar-bullets">
+              <li><span class="check-icon">&#10003;</span> 4.5x cheaper than paid search or display ads</li>
+              <li><span class="check-icon">&#10003;</span> No $120k/yr SDR base salaries or ramp lag</li>
+              <li><span class="check-icon">&#10003;</span> Transparent pay-for-performance pricing</li>
+            </ul>
+          </div>
+
+          <!-- Pillar 2: Scale + Perceived Personalization -->
+          <div class="pillar-card glow-card active-border">
+            <div class="card-glow"></div>
+            <div class="pillar-icon-box accent-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </div>
+            <div class="pillar-tag">Pillar 02</div>
+            <h3 class="pillar-heading">AI Scale + High Perceived Personalization</h3>
+            <p class="pillar-text">
+              Attack at massive volume without sounding like a robot. Our proprietary AI pipelines ingest real-time company news, podcast transcripts, LinkedIn posts, and recent job changes to compose bespoke opening hooks for each individual prospect.
+            </p>
+            <ul class="pillar-bullets">
+              <li><span class="check-icon">&#10003;</span> 100% unique icebreakers synthesized per contact</li>
+              <li><span class="check-icon">&#10003;</span> Prospects genuinely believe the SDR researched for 20 mins</li>
+              <li><span class="check-icon">&#10003;</span> 28% to 42% open-to-reply conversion rates</li>
+            </ul>
+          </div>
+
+          <!-- Pillar 3: Pick Best Fit -->
+          <div class="pillar-card glow-card">
+            <div class="card-glow"></div>
+            <div class="pillar-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="22" y1="12" x2="18" y2="12"></line>
+                <line x1="6" y1="12" x2="2" y2="12"></line>
+                <line x1="12" y1="6" x2="12" y2="2"></line>
+                <line x1="12" y1="22" x2="12" y2="18"></line>
+              </svg>
+            </div>
+            <div class="pillar-tag">Pillar 03</div>
+            <h3 class="pillar-heading">"Pick Best Fit" &trade; ICP Filtering</h3>
+            <p class="pillar-text">
+              We never blast unvetted leads. Our multi-stage qualification engine filters for active buyer intent, funding timing, tech stack compatibility, and budget size so you only talk to accounts with immediate willingness to buy.
+            </p>
+            <ul class="pillar-bullets">
+              <li><span class="check-icon">&#10003;</span> Multi-layer waterfall data enrichment</li>
+              <li><span class="check-icon">&#10003;</span> Elimination of zero-budget tire kickers</li>
+              <li><span class="check-icon">&#10003;</span> Zero SDR time wasted on unviable meetings</li>
+            </ul>
+          </div>
+
+          <!-- Pillar 4: Trusted by Multi-Billion Dollar Portfolios -->
+          <div class="pillar-card glow-card">
+            <div class="card-glow"></div>
+            <div class="pillar-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <div class="pillar-tag">Pillar 04</div>
+            <h3 class="pillar-heading">Enterprise-Grade Infrastructure</h3>
+            <p class="pillar-text">
+              Trusted by VCs and multi-billion dollar portfolio companies. We isolate your primary domain reputation using 30-50 dedicated secondary domains, automated warmups, and humanized throttling that maintains 99%+ deliverability.
+            </p>
+            <ul class="pillar-bullets">
+              <li><span class="check-icon">&#10003;</span> Zero risk to your corporate email domain</li>
+              <li><span class="check-icon">&#10003;</span> Strict SOC-2 & GDPR compliant lead sourcing</li>
+              <li><span class="check-icon">&#10003;</span> Direct two-way sync with HubSpot, Salesforce & Slack</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive "Pick Best Fit" Live Demonstration Tool -->
+    <section class="fit-section" id="pick-best-fit">
+      <div class="container">
+        
+        <div class="fit-container-glass">
+          <div class="fit-header-row">
+            <div>
+              <div class="fit-badge">INTERACTIVE SIMULATION</div>
+              <h2 class="fit-title">See Our "Pick Best Fit" &trade; Algorithm In Action</h2>
+              <p class="fit-subtitle">
+                Test how LeftClick dynamically filters high-intent target accounts, generates customized personalization hooks, and calculates meeting probability.
+              </p>
+            </div>
+            <div class="fit-status-badge">
+              <span class="pulse-green"></span> 24,800+ Live B2B Accounts Indexed
+            </div>
+          </div>
+
+          <!-- Interactive Filter Controls -->
+          <div class="fit-controls-grid">
+            
+            <div class="control-group">
+              <label for="icp-industry">Target Industry</label>
+              <select id="icp-industry" class="styled-select">
+                <option value="fintech">B2B FinTech & Payments</option>
+                <option value="saas" selected>Enterprise Cloud / SaaS</option>
+                <option value="ai">AI Infrastructure & DevTools</option>
+                <option value="cyber">Cybersecurity & Compliance</option>
+              </select>
+            </div>
+
+            <div class="control-group">
+              <label for="icp-revenue">Company ARR / Revenue</label>
+              <select id="icp-revenue" class="styled-select">
+                <option value="seed">$1M - $5M ARR (Fast Scale)</option>
+                <option value="growth" selected>$5M - $25M ARR (Growth Stage)</option>
+                <option value="enterprise">$25M - $100M+ ARR (Late Stage / Unicorn)</option>
+              </select>
+            </div>
+
+            <div class="control-group">
+              <label for="icp-trigger">Primary Buying Signal Trigger</label>
+              <select id="icp-trigger" class="styled-select">
+                <option value="funding" selected>Recent Series B/C Round ($20M+)</option>
+                <option value="hiring">Rapid Sales / Eng Headcount Expansion</option>
+                <option value="tech">Competitor Contract Expiration</option>
+                <option value="executive">New VP Sales / CRO Appointed (&lt;90 days)</option>
+              </select>
+            </div>
+
+            <div class="control-group">
+              <label for="icp-target">Target Decision Maker</label>
+              <select id="icp-target" class="styled-select">
+                <option value="cro" selected>Chief Revenue Officer / VP Sales</option>
+                <option value="cmo">Chief Marketing Officer / VP Demand Gen</option>
+                <option value="founder">Founder & CEO</option>
+              </select>
+            </div>
+
+          </div>
+
+          <!-- Live Output Result Card -->
+          <div class="fit-result-card" id="fit-result-card">
+            <div class="result-header">
+              <div class="account-profile">
+                <div class="company-avatar" id="res-avatar">SaaS</div>
+                <div>
+                  <div class="account-name" id="res-company">Datastream Technologies</div>
+                  <div class="account-sub" id="res-details">Series C &bull; 180 Employees &bull; San Francisco, CA</div>
+                </div>
+              </div>
+              <div class="fit-score-box">
+                <div class="fit-score-label">LeftClick Fit Score</div>
+                <div class="fit-score-number" id="res-score">96.8<span>/100</span></div>
+              </div>
+            </div>
+
+            <div class="result-body-grid">
+              
+              <div class="result-col">
+                <div class="col-title">Detected Buying Intent Signals</div>
+                <div class="intent-pill-group" id="res-signals">
+                  <span class="intent-pill">&#9889; Raised $32M Series B (34 days ago)</span>
+                  <span class="intent-pill">&#128101; 8 Openings for Account Executives</span>
+                  <span class="intent-pill">&#128200; Headcount Growth: +48% YoY</span>
+                </div>
+
+                <div class="col-title mt-3">Target Prospect Profile</div>
+                <div class="prospect-card">
+                  <div class="prospect-name" id="res-person">Elena Rostova</div>
+                  <div class="prospect-role" id="res-role">VP of Revenue & Growth</div>
+                  <div class="prospect-meta">Verified Direct Work Email &bull; LinkedIn Active (posted 3d ago)</div>
+                </div>
+              </div>
+
+              <div class="result-col">
+                <div class="col-title">AI-Synthesized Personalized Hook</div>
+                <div class="hook-box" id="res-hook">
+                  "Saw Datastream just expanded your enterprise AE team by 8 heads after the $32M Series B led by Insight. When ramping outbound capacity that quickly, keeping CAC under $250 without burning SDR bandwidth is usually the bottleneck..."
+                </div>
+
+                <div class="metrics-mini-grid">
+                  <div class="mini-metric">
+                    <span class="m-val" id="res-reply">38.4%</span>
+                    <span class="m-lbl">Projected Reply Rate</span>
+                  </div>
+                  <div class="mini-metric">
+                    <span class="m-val" id="res-cac">$125</span>
+                    <span class="m-lbl">Estimated CAC / Demo</span>
+                  </div>
+                  <div class="mini-metric">
+                    <span class="m-val text-brand" id="res-intent">HIGH FIT</span>
+                    <span class="m-lbl">Outbound Priority</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Super Low CAC Calculator Section -->
+    <section class="cac-section" id="cac-calculator">
+      <div class="container">
+        
+        <div class="cac-wrapper">
+          <div class="cac-text-col">
+            <div class="fit-badge">PROFITABILITY ENGINE</div>
+            <h2 class="cac-title">Calculate Your Super-Low CAC & ROI</h2>
+            <p class="cac-subtitle">
+              See what your customer acquisition cost looks like when switching from expensive paid ad channels and bloated SDR teams to LeftClick’s precision outbound engine.
+            </p>
+
+            <div class="cac-comparison-box">
+              <div class="comp-row">
+                <span class="comp-label">Avg. Paid B2B Search/Social Demo CAC:</span>
+                <span class="comp-val text-danger">$750 - $1,400+</span>
+              </div>
+              <div class="comp-row">
+                <span class="comp-label">In-House SDR Hire (Base + OTE + Tools):</span>
+                <span class="comp-val text-warning">$9,200 / month</span>
+              </div>
+              <div class="comp-row highlight-row">
+                <span class="comp-label">LeftClick AI Precision Outbound CAC:</span>
+                <span class="comp-val text-success font-bold">$120 - $180 / demo</span>
+              </div>
+            </div>
+
+            <div class="cac-guarantee-card">
+              <div class="guar-icon">&#128737;</div>
+              <div class="guar-text">
+                <strong>Our Qualified Meeting Guarantee:</strong> You only pay for meetings that strictly match your ICP criteria and show up ready to discuss solutions.
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Calculator Card -->
+          <div class="calculator-card">
+            <div class="calc-header">
+              <h3>Interactive CAC Savings Simulator</h3>
+              <span class="calc-live-pill">Live Estimates</span>
+            </div>
+
+            <!-- Slider 1 -->
+            <div class="slider-control">
+              <div class="slider-labels">
+                <label for="target-meetings">Desired Monthly Qualified Demos:</label>
+                <span class="slider-value" id="val-meetings">25 Demos</span>
+              </div>
+              <input type="range" id="target-meetings" min="10" max="80" value="25" step="5" class="range-slider">
+              <div class="slider-range-sub"><span>10 demos/mo</span><span>80 demos/mo</span></div>
+            </div>
+
+            <!-- Slider 2 -->
+            <div class="slider-control">
+              <div class="slider-labels">
+                <label for="deal-size">Average Annual Deal Size (ACV):</label>
+                <span class="slider-value" id="val-acv">$35,000</span>
+              </div>
+              <input type="range" id="deal-size" min="10000" max="150000" value="35000" step="5000" class="range-slider">
+              <div class="slider-range-sub"><span>$10,000 ACV</span><span>$150,000+ ACV</span></div>
+            </div>
+
+            <!-- Slider 3 -->
+            <div class="slider-control">
+              <div class="slider-labels">
+                <label for="close-rate">Sales Qualified Demo Close Rate:</label>
+                <span class="slider-value" id="val-close">20%</span>
+              </div>
+              <input type="range" id="close-rate" min="10" max="40" value="20" step="2" class="range-slider">
+              <div class="slider-range-sub"><span>10% conservative</span><span>40% high-intent</span></div>
+            </div>
+
+            <div class="divider-dashed"></div>
+
+            <!-- Calculated Results -->
+            <div class="calc-outputs">
+              <div class="output-item main-output">
+                <span class="out-label">Estimated Monthly Pipeline Added:</span>
+                <span class="out-val text-brand" id="out-pipeline">$875,000</span>
+              </div>
+              
+              <div class="output-subgrid">
+                <div class="output-item">
+                  <span class="out-label">Projected Annual Closed ARR:</span>
+                  <span class="out-val text-success" id="out-arr">$2,100,000</span>
+                </div>
+                <div class="output-item">
+                  <span class="out-label">Average LeftClick Demo CAC:</span>
+                  <span class="out-val text-accent" id="out-cac">$145</span>
+                </div>
+              </div>
+
+              <div class="output-item savings-item">
+                <span class="out-label">Estimated Annual CAC Capital Saved vs. Ads:</span>
+                <span class="out-val text-glow" id="out-savings">$182,400</span>
+              </div>
+            </div>
+
+            <button class="btn-primary btn-block open-modal-trigger mt-3">
+              Lock In These Unit Economics &rarr;
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Outbound Architecture & Workflow -->
+    <section class="workflow-section">
+      <div class="container">
+        <div class="section-badge-center">
+          <span class="badge-sub">HOW WE ATTACK AT SCALE</span>
+        </div>
+        <h2 class="section-title text-center">
+          The 5-Step LeftClick Revenue Engine
+        </h2>
+        <p class="section-desc text-center">
+          Built for high-growth B2B companies looking for a turn-key pipeline machine without the headache of managing outbound SDRs.
+        </p>
+
+        <div class="workflow-steps-grid">
+          
+          <div class="step-card">
+            <div class="step-number">01</div>
+            <h4 class="step-title">ICP Signal Mapping</h4>
+            <p class="step-desc">
+              We define your strict "Pick Best Fit" criteria: target company ARR, hiring velocity, tech stack, tech trigger events, and buyer seniority.
+            </p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">02</div>
+            <h4 class="step-title">Secondary Domain Cluster</h4>
+            <p class="step-desc">
+              We provision and warm up 30-50 secondary domains on Google Workspace & Microsoft 365, ensuring your primary domain is 100% protected.
+            </p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">03</div>
+            <h4 class="step-title">AI Generative Personalization</h4>
+            <p class="step-desc">
+              Our AI engine researches every single lead, synthesizing 1-to-1 personalized hooks that cut through executive inboxes like a razor.
+            </p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">04</div>
+            <h4 class="step-title">Multi-Touch Dynamic Sequences</h4>
+            <p class="step-desc">
+              Coordinated cold emails, relevant case studies, and follow-ups delivered at humanized intervals to maximize positive responses.
+            </p>
+          </div>
+
+          <div class="step-card active-step">
+            <div class="step-number">05</div>
+            <h4 class="step-title">Calendar Direct Booking</h4>
+            <p class="step-desc">
+              Positive responses are immediately qualified and booked directly onto your Account Executives' calendars in real-time.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Proof / Case Studies Section -->
+    <section class="cases-section" id="case-studies">
+      <div class="container">
+        <div class="section-badge-center">
+          <span class="badge-sub">PROVEN AT SCALE</span>
+        </div>
+        <h2 class="section-title text-center">
+          Results From Multi-Billion Dollar Portfolio Companies
+        </h2>
+        <p class="section-desc text-center">
+          High-growth B2B leaders trust LeftClick because we deliver predictable revenue with measurable unit economics.
+        </p>
+
+        <div class="cases-grid">
+          
+          <div class="case-card">
+            <div class="case-badge">B2B FINTECH &bull; SERIES B</div>
+            <h3 class="case-headline">Added $3.8M Pipeline in 90 Days at $134 CAC</h3>
+            <p class="case-summary">
+              Struggling with LinkedIn ads costing $920/lead. LeftClick built an outbound engine targeting CFOs and VPs of Finance with trigger-based hiring signals.
+            </p>
+            <div class="case-stats">
+              <div class="c-stat">
+                <span class="c-val text-brand">62</span>
+                <span class="c-lbl">Qualified Demos</span>
+              </div>
+              <div class="c-stat">
+                <span class="c-val text-success">84%</span>
+                <span class="c-lbl">CAC Drop</span>
+              </div>
+              <div class="c-stat">
+                <span class="c-val text-accent">$3.8M</span>
+                <span class="c-lbl">New Pipeline</span>
+              </div>
+            </div>
+            <div class="case-quote">
+              "LeftClick generated more enterprise pipeline in one quarter than our 3 internal SDRs did in an entire year. The personalization is so good our prospects compliment the emails."
+            </div>
+            <div class="case-author">
+              <div class="author-avatar">&#128100;</div>
+              <div>
+                <div class="author-name">David S.</div>
+                <div class="author-title">Chief Revenue Officer, Series B FinTech</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="case-card">
+            <div class="case-badge">CYBERSECURITY &bull; SERIES C</div>
+            <h3 class="case-headline">Cracked Fortune 500 CISOs with "Pick Best Fit"</h3>
+            <p class="case-summary">
+              Needed to reach security executives at enterprises with $50M+ ARR. LeftClick deployed algorithmic tech-stack detection to identify vulnerabilty gaps.
+            </p>
+            <div class="case-stats">
+              <div class="c-stat">
+                <span class="c-val text-brand">38</span>
+                <span class="c-lbl">Enterprise Meetings</span>
+              </div>
+              <div class="c-stat">
+                <span class="c-val text-success">$168</span>
+                <span class="c-lbl">Final CAC/Meeting</span>
+              </div>
+              <div class="c-stat">
+                <span class="c-val text-accent">5.2x</span>
+                <span class="c-lbl">Pipeline ROI</span>
+              </div>
+            </div>
+            <div class="case-quote">
+              "When you sell to CISOs, generic spam gets you blacklisted. LeftClick's AI research synthesized angles that felt like our VP of Product spent 30 minutes writing each one."
+            </div>
+            <div class="case-author">
+              <div class="author-avatar">&#128100;</div>
+              <div>
+                <div class="author-name">Marcus T.</div>
+                <div class="author-title">VP Demand Generation, Series C Security Unicorn</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="case-card">
+            <div class="case-badge">DEVTOOLS & AI &bull; YC ALUMNI</div>
+            <h3 class="case-headline">Scaled From $1M to $4.5M ARR with Zero Ad Spend</h3>
+            <p class="case-summary">
+              Bootstrapped early stage looking for ultra-efficient customer acquisition. Relied exclusively on LeftClick outbound to book 15-20 meetings every week.
+            </p>
+            <div class="case-stats">
+              <div class="c-stat">
+                <span class="c-val text-brand">140+</span>
+                <span class="c-lbl">Meetings Booked</span>
+              </div>
+              <div class="c-stat">
+                <span class="c-val text-success">39.2%</span>
+                <span class="c-lbl">Reply Rate</span>
+              </div>
+              <div class="c-stat">
+                <span class="c-val text-accent">$115</span>
+                <span class="c-lbl">Average CAC</span>
+              </div>
+            </div>
+            <div class="case-quote">
+              "We didn't spend a dollar on paid ads. LeftClick was our entire outbound GTM engine, driving meetings with VP Eng and CTO targets like clockwork."
+            </div>
+            <div class="case-author">
+              <div class="author-avatar">&#128100;</div>
+              <div>
+                <div class="author-name">Sarah K.</div>
+                <div class="author-title">Co-Founder & CEO, DevTools Platform</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+      <div class="container">
+        <div class="section-badge-center">
+          <span class="badge-sub">COMMON QUESTIONS</span>
+        </div>
+        <h2 class="section-title text-center">Everything You Need To Know</h2>
+        <p class="section-desc text-center">
+          How LeftClick protects your domain, ensures compliance, and scales your outbound pipeline.
+        </p>
+
+        <div class="faq-accordion-list">
+          
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>How does LeftClick achieve super-low CAC compared to ads or SDRs?</span>
+              <span class="faq-chevron">&plus;</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Paid advertising requires continuous auction bidding where Google and LinkedIn capture all the margin. Hiring in-house SDRs requires $100k-$120k OTE per rep plus $15k/yr in tech stack licenses and months of ramp time. LeftClick provides a completely managed, software-driven outbound engine that reaches thousands of verified decision makers with zero ad spend and zero payroll overhead &mdash; delivering qualified meetings at a fraction of traditional CAC ($95 - $190 vs $700+).
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>What does "Pick Best Fit" &trade; mean in practice?</span>
+              <span class="faq-chevron">&plus;</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Instead of shotgunning cold emails to every name on a list, our "Pick Best Fit" algorithm filters your total addressable market through multiple intent checkpoints: funding timing, hiring signals, active tech stack integrations, and job changes. We only initiate outreach with accounts that have an active, urgent business reason to evaluate your solution today.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>How do you achieve high perceived personalization at scale without sounding like an AI bot?</span>
+              <span class="faq-chevron">&plus;</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Generic cold email templates or basic &ldquo;Hey {{first_name}} at {{company}}&rdquo; tags get ignored or flagged as spam. Our AI pipeline reads recent 10-K filings, press releases, LinkedIn posts, job descriptions, and podcasts to extract authentic context. It synthesizes an original, contextually relevant opening hook for every single prospect that is indistinguishable from a top-tier AE doing 25 minutes of manual research.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Will cold email put my company's main domain at risk?</span>
+              <span class="faq-chevron">&plus;</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Never. We never send outbound cold emails from your primary corporate domain. We purchase, configure, authenticate, and warm up 20 to 50 lookalike secondary domains (e.g., `getcompany.com`, `trycompany.co`) with complete SPF, DKIM, DMARC, and custom tracking domains. Your primary corporate email stays 100% clean and isolated.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>How quickly will we see the first qualified meetings booked?</span>
+              <span class="faq-chevron">&plus;</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Domain setup and automated warming take approximately 10-14 days to reach peak deliverability scores. Once campaign sequencing goes live, high-growth B2B clients typically see their first qualified meetings appearing on their calendar within the first 48 to 72 hours of launch.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>How are meetings qualified and verified?</span>
+              <span class="faq-chevron">&plus;</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Before any prospect is booked onto your calendar, they must pass your predefined ICP qualification criteria (title, company size, revenue, tech stack). If a meeting ever slips through that doesn't meet the agreed specifications or is a no-show, we replace it at zero cost.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Bottom CTA Banner -->
+    <section class="cta-banner-section">
+      <div class="container">
+        <div class="cta-card">
+          <div class="cta-glow"></div>
+          <span class="badge-pulse">READY TO SCALE?</span>
+          <h2 class="cta-title">
+            Stop burning budget on high-CAC ads.<br>
+            Fill your pipeline with LeftClick.
+          </h2>
+          <p class="cta-desc">
+            Book a 20-minute Outbound Strategy Session. We will tear down your ICP, reveal 500+ ready-to-buy accounts in your market, and give you custom campaign angles for free.
+          </p>
+          <div class="cta-btn-wrapper">
+            <button class="btn-primary btn-large open-modal-trigger">
+              <span>Schedule Strategy Call</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+            <span class="cta-note">&#128274; 100% Confidential. No commitment required.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      
+      <div class="footer-col brand-col">
+        <a href="#" class="brand-logo">
+          <div class="logo-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+            <span class="logo-dot"></span>
+          </div>
+          <span class="logo-text">left<span>click</span></span>
+        </a>
+        <p class="footer-tagline">
+          The AI outbound revenue engine for high-growth B2B companies. Unlocking scale with perceived personalization and super-low CAC.
+        </p>
+        <div class="footer-status">
+          <span class="pulse-green"></span> Outbound Systems Operational &bull; 99.9% Uptime
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Platform</h4>
+        <ul class="footer-links">
+          <li><a href="#engine">AI Personalization Engine</a></li>
+          <li><a href="#pick-best-fit">Pick Best Fit &trade; Filtering</a></li>
+          <li><a href="#cac-calculator">Super-Low CAC Calculator</a></li>
+          <li><a href="#interactive-demo">Live Deliverability Hub</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Proof</h4>
+        <ul class="footer-links">
+          <li><a href="#case-studies">Multi-Billion $ Portfolio Cases</a></li>
+          <li><a href="#case-studies">FinTech Scale Story</a></li>
+          <li><a href="#case-studies">Cybersecurity Enterprise GTM</a></li>
+          <li><a href="#faq">Deliverability Guarantee</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Compliance & Security</h4>
+        <ul class="footer-links">
+          <li><a href="#">CAN-SPAM Compliant</a></li>
+          <li><a href="#">GDPR & CCPA Safeguards</a></li>
+          <li><a href="#">Secondary Domain Isolation</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+      <div class="copyright">
+        &copy; 2026 LeftClick Technologies, Inc. All rights reserved. Built for high-growth B2B companies.
+      </div>
+      <div class="footer-legal">
+        <a href="#">Terms of Service</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Security Overview</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Booking / Strategy Session Modal -->
+  <div class="modal-overlay" id="booking-modal" aria-hidden="true">
+    <div class="modal-box">
+      <button class="modal-close" id="modal-close-btn" aria-label="Close modal">&times;</button>
+      
+      <div class="modal-header">
+        <div class="modal-icon-badge">&#128197;</div>
+        <h3 class="modal-title">Book Your 20-Min Outbound Strategy Session</h3>
+        <p class="modal-subtitle">
+          We'll analyze your ICP, demonstrate our "Pick Best Fit" filter on your market, and show you how to cut your CAC by 60-80%.
+        </p>
+      </div>
+
+      <form id="booking-form" class="modal-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="lead-name">Your Full Name *</label>
+            <input type="text" id="lead-name" required placeholder="Sarah Connor">
+          </div>
+          <div class="form-group">
+            <label for="lead-email">Work Email *</label>
+            <input type="email" id="lead-email" required placeholder="sarah@company.com">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="lead-company">Company Website *</label>
+            <input type="text" id="lead-company" required placeholder="company.com">
+          </div>
+          <div class="form-group">
+            <label for="lead-revenue">Current Company ARR</label>
+            <select id="lead-revenue" class="styled-select">
+              <option value="sub-1m">&lt; $1M ARR</option>
+              <option value="1m-5m" selected>$1M - $5M ARR</option>
+              <option value="5m-20m">$5M - $20M ARR</option>
+              <option value="20m+">$20M+ ARR</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="lead-channel">Current Primary Lead Acquisition Channel</label>
+          <select id="lead-channel" class="styled-select">
+            <option value="inhouse-sdr">In-house SDR Team</option>
+            <option value="paid-ads">Paid Ads (Google / LinkedIn / Meta)</option>
+            <option value="agency">Outbound Agency</option>
+            <option value="referrals">Founder-led / Word of mouth</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="lead-time">Select Preferred Strategy Session Time</label>
+          <div class="time-slot-grid" id="time-slot-container">
+            <button type="button" class="time-slot active" data-time="Tomorrow, 10:00 AM EST">Tomorrow, 10:00 AM EST</button>
+            <button type="button" class="time-slot" data-time="Tomorrow, 2:30 PM EST">Tomorrow, 2:30 PM EST</button>
+            <button type="button" class="time-slot" data-time="Thursday, 11:15 AM EST">Thursday, 11:15 AM EST</button>
+            <button type="button" class="time-slot" data-time="Thursday, 4:00 PM EST">Thursday, 4:00 PM EST</button>
+          </div>
+        </div>
+
+        <button type="submit" class="btn-primary btn-block btn-large mt-3" id="confirm-booking-btn">
+          <span>Confirm Strategy Session &rarr;</span>
+        </button>
+        <p class="form-privacy-note">
+          &#128274; Trusted vendor for multi-billion dollar portfolios. Zero spam guarantee.
+        </p>
+      </form>
+
+      <!-- Confirmation Success State (Hidden by default) -->
+      <div class="booking-success" id="booking-success" style="display: none;">
+        <div class="success-icon">&#10004;</div>
+        <h3>Strategy Session Confirmed!</h3>
+        <p>A calendar invite with Google Meet details and your custom ICP Blueprint has been sent to <span id="success-email" class="highlight-val">your email</span>.</p>
+        <div class="success-details-card">
+          <div><strong>Meeting:</strong> LeftClick 20-Min Outbound Architecture</div>
+          <div><strong>Time:</strong> <span id="success-time">Tomorrow, 10:00 AM EST</span></div>
+          <div><strong>Host:</strong> Senior Outbound Growth Strategist</div>
+        </div>
+        <button class="btn-secondary btn-block mt-3" id="close-success-btn">Back to Website</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Complete Authentication Modal (Log In / Sign Up / Forgot Password) -->
+  <div class="modal-overlay" id="auth-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="auth-modal-title">
+    <div class="modal-box auth-modal-box">
+      <button class="modal-close" id="auth-modal-close-btn" aria-label="Close modal">&times;</button>
+      
+      <!-- Modal Header -->
+      <div class="auth-header">
+        <div class="auth-brand">
+          <div class="logo-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+            <span class="logo-dot"></span>
+          </div>
+          <span class="logo-text">left<span>click</span></span>
+        </div>
+        <h3 class="auth-title" id="auth-modal-title">Welcome Back</h3>
+        <p class="auth-subtitle" id="auth-modal-subtitle">Log in to your account to manage outbound pipelines and lead intelligence.</p>
+      </div>
+
+      <!-- Auth Navigation Tabs (Sign In / Sign Up) -->
+      <div class="auth-tabs-container" id="auth-tabs-container">
+        <div class="auth-tabs" role="tablist">
+          <button class="auth-tab active" id="tab-login" role="tab" aria-selected="true" data-target="form-login">
+            Log In
+          </button>
+          <button class="auth-tab" id="tab-signup" role="tab" aria-selected="false" data-target="form-signup">
+            Create Account
+          </button>
+          <div class="auth-tab-glider" id="auth-glider"></div>
+        </div>
+      </div>
+
+      <!-- Social Logins -->
+      <div class="auth-social-container" id="auth-social-container">
+        <div class="social-buttons-grid">
+          <button type="button" class="btn-social google" id="google-auth-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24">
+              <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+              <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+              <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+              <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+            </svg>
+            <span>Google</span>
+          </button>
+          <button type="button" class="btn-social github" id="github-auth-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+            </svg>
+            <span>GitHub</span>
+          </button>
+        </div>
+        <div class="auth-divider">
+          <span>or continue with email</span>
+        </div>
+      </div>
+
+      <!-- FORM 1: LOG IN -->
+      <form id="form-login" class="auth-form active">
+        <div class="form-group">
+          <label for="login-email">Work Email</label>
+          <div class="input-icon-wrapper">
+            <svg class="input-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <input type="email" id="login-email" required placeholder="alex@company.com" autocomplete="email">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="label-row">
+            <label for="login-password">Password</label>
+            <a href="#" class="forgot-pass-link" id="link-forgot-pass">Forgot password?</a>
+          </div>
+          <div class="input-icon-wrapper">
+            <svg class="input-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+            <input type="password" id="login-password" required placeholder="••••••••••••" autocomplete="current-password">
+            <button type="button" class="btn-toggle-pass" aria-label="Toggle password visibility" data-target="login-password">
+              <svg class="eye-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="form-options">
+          <label class="custom-checkbox">
+            <input type="checkbox" id="login-remember" checked>
+            <span class="checkmark"></span>
+            <span>Remember me for 30 days</span>
+          </label>
+        </div>
+
+        <button type="submit" class="btn-primary btn-block btn-large mt-3" id="btn-submit-login">
+          <span class="btn-text">Log In to Workspace &rarr;</span>
+          <div class="spinner-loader" style="display: none;"></div>
+        </button>
+
+        <p class="auth-switch-note">
+          Don't have an account? <a href="#" id="link-switch-signup">Create one now</a>
+        </p>
+      </form>
+
+      <!-- FORM 2: SIGN UP -->
+      <form id="form-signup" class="auth-form" style="display: none;">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="signup-name">Full Name *</label>
+            <div class="input-icon-wrapper">
+              <svg class="input-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+              <input type="text" id="signup-name" required placeholder="Alex Morgan">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="signup-email">Work Email *</label>
+            <div class="input-icon-wrapper">
+              <svg class="input-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <input type="email" id="signup-email" required placeholder="alex@company.com" autocomplete="email">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="signup-role">Your Role / Title</label>
+          <div class="input-icon-wrapper">
+            <svg class="input-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+            <select id="signup-role" class="styled-select auth-select">
+              <option value="growth-lead" selected>Growth Lead / SDR Manager</option>
+              <option value="head-sales">Head of Sales / VP Revenue</option>
+              <option value="founder">Founder / CEO</option>
+              <option value="marketing">Demand Gen / Marketing</option>
+              <option value="other">Other Executive</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="signup-password">Create Password *</label>
+          <div class="input-icon-wrapper">
+            <svg class="input-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+            <input type="password" id="signup-password" required placeholder="Minimum 8 characters" autocomplete="new-password">
+            <button type="button" class="btn-toggle-pass" aria-label="Toggle password visibility" data-target="signup-password">
+              <svg class="eye-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+            </button>
+          </div>
+
+          <!-- Password Strength Indicator -->
+          <div class="strength-meter-box">
+            <div class="strength-bar-track">
+              <div class="strength-bar-fill" id="strength-fill"></div>
+            </div>
+            <div class="strength-status-row">
+              <span class="strength-label">Password Strength:</span>
+              <span class="strength-val" id="strength-text">Empty</span>
+            </div>
+          </div>
+
+          <!-- Requirements Checklist -->
+          <ul class="req-checklist">
+            <li class="req-item" id="req-length"><span class="req-badge">✕</span> 8+ characters</li>
+            <li class="req-item" id="req-upper"><span class="req-badge">✕</span> Uppercase letter</li>
+            <li class="req-item" id="req-number"><span class="req-badge">✕</span> Contains number</li>
+            <li class="req-item" id="req-special"><span class="req-badge">✕</span> Special char (!@#$)</li>
+          </ul>
+        </div>
+
+        <div class="form-options">
+          <label class="custom-checkbox">
+            <input type="checkbox" id="signup-terms" required checked>
+            <span class="checkmark"></span>
+            <span>I agree to the <a href="#" class="inline-link">Terms of Service</a> & <a href="#" class="inline-link">Privacy Policy</a></span>
+          </label>
+        </div>
+
+        <button type="submit" class="btn-primary btn-block btn-large mt-3" id="btn-submit-signup">
+          <span class="btn-text">Create Free Account &rarr;</span>
+          <div class="spinner-loader" style="display: none;"></div>
+        </button>
+
+        <p class="auth-switch-note">
+          Already have an account? <a href="#" id="link-switch-login">Log In instead</a>
+        </p>
+      </form>
+
+      <!-- FORM 3: FORGOT PASSWORD -->
+      <form id="form-forgot" class="auth-form" style="display: none;">
+        <div class="forgot-header-info">
+          <p>Enter the email address tied to your account and we'll send instructions to reset your password.</p>
+        </div>
+
+        <div class="form-group">
+          <label for="forgot-email">Work Email</label>
+          <div class="input-icon-wrapper">
+            <svg class="input-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <input type="email" id="forgot-email" required placeholder="alex@company.com">
+          </div>
+        </div>
+
+        <button type="submit" class="btn-primary btn-block btn-large mt-3" id="btn-submit-forgot">
+          <span class="btn-text">Send Reset Instructions &rarr;</span>
+          <div class="spinner-loader" style="display: none;"></div>
+        </button>
+
+        <p class="auth-switch-note">
+          Remembered your password? <a href="#" id="link-forgot-back-login">Back to Log In</a>
+        </p>
+      </form>
+
+      <!-- Reset Password Success State -->
+      <div class="forgot-success-box" id="forgot-success-box" style="display: none;">
+        <div class="success-icon">&#10004;</div>
+        <h3>Check Your Email</h3>
+        <p>We've sent password reset instructions to <span id="forgot-target-email" class="highlight-val">your email</span>.</p>
+        <button type="button" class="btn-secondary btn-block mt-3" id="btn-forgot-return-login">Return to Log In</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- Main JavaScript Logic -->
+  <script src="script.js"></script>
+</body>
+</html>
